@@ -8,10 +8,10 @@ function gameLoop() {
 
     //draw background  -- call from background.js
     drawBackground();
-    drawTarget(ctx);
-    updateTarget(ctx);
+   // drawTarget(ctx);
+  //  updateTarget(ctx);
   
-   // targets(ctx);
+   newTarget(ctx);
     drawCharacter(ctx);
     updateCharacter();
 

@@ -9,6 +9,18 @@ const TARGET_WIDTH = 200;
 const TARGET_HEIGHT = 10;
 const TARGET_SPEED = .5;
 
+function newTarget(ctx) {
+drawTarget(ctx);
+updateTarget(ctx);
+
+if (targetX <= 0){
+
+    targetX = 800;
+    targetY -= 50;
+}
+
+}
+
 
 function drawTarget(ctx) {
     ctx.fillStyle = "#ff0000"; //red

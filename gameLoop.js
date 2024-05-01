@@ -10,8 +10,7 @@ function gameLoop() {
     drawBackground();
     drawTarget(ctx);
     updateTarget(ctx);
-    // drawTarget100(ctx);
-    //  updateTarget100(ctx);
+  
    // targets(ctx);
     drawCharacter(ctx);
     updateCharacter();

@@ -13,9 +13,9 @@ function newTarget(ctx) {
 drawTarget(ctx);
 updateTarget(ctx);
 
-if (targetX <= 0){
+if (targetX <= 100){
 
-    targetX = 800;
+    targetX = 900;
     targetY -= 50;
 }
 
@@ -26,7 +26,7 @@ function drawTarget(ctx) {
     ctx.fillStyle = "#ff0000"; //red
     ctx.fillRect(targetX, targetY, TARGET_WIDTH, TARGET_HEIGHT); //locationX, locationY, width, height
     ctx.fillStyle = "#000000"; //black
-    ctx.fillText("80-90 BPM", targetX + 10, targetY + 12)
+    ctx.fillText( 790 - targetY + "BPM", targetX + 10, targetY + 12)
 }
 
 function updateTarget(ctx) {
